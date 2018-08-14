@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d2dfbd39-218e-42f4-be3c-492828dbee0c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MozioTest/settings.py" afterPath="$PROJECT_DIR$/MozioTest/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MozioTest/urls.py" afterPath="$PROJECT_DIR$/MozioTest/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/polygons/models.py" afterPath="$PROJECT_DIR$/polygons/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/polygons/serializers.py" afterPath="$PROJECT_DIR$/polygons/serializers.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/polygons/tests.py" afterPath="$PROJECT_DIR$/polygons/tests.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/polygons/urls.py" afterPath="$PROJECT_DIR$/polygons/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/polygons/views.py" afterPath="$PROJECT_DIR$/polygons/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -95,10 +90,17 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/polygons/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="55" column="13" lean-forward="false" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="13" />
+            <state relative-caret-position="77">
+              <caret line="14" column="41" lean-forward="false" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
+                <element signature="e#619#875#0" expanded="false" />
+                <element signature="e#935#1250#0" expanded="false" />
+                <element signature="e#935#1170#1" expanded="false" />
+                <element signature="e#1299#1574#0" expanded="false" />
+                <element signature="e#1299#1488#1" expanded="false" />
+                <element signature="e#1637#1974#0" expanded="false" />
+                <element signature="e#2012#2816#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -117,8 +119,8 @@
       <file leaf-file-name="tests.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/polygons/tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="90" column="40" lean-forward="false" selection-start-line="90" selection-start-column="40" selection-end-line="90" selection-end-column="40" />
+            <state relative-caret-position="365">
+              <caret line="90" column="80" lean-forward="false" selection-start-line="90" selection-start-column="80" selection-end-line="90" selection-end-column="80" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
@@ -139,9 +141,9 @@
         <option value="$PROJECT_DIR$/polygons/models.py" />
         <option value="$PROJECT_DIR$/MozioTest/settings.py" />
         <option value="$PROJECT_DIR$/polygons/serializers.py" />
-        <option value="$PROJECT_DIR$/polygons/tests.py" />
         <option value="$PROJECT_DIR$/polygons/urls.py" />
         <option value="$PROJECT_DIR$/polygons/views.py" />
+        <option value="$PROJECT_DIR$/polygons/tests.py" />
       </list>
     </option>
   </component>
@@ -261,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534242929305</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Edited Readme">
+      <created>1534265714469</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1534265714469</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -300,7 +309,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="Edited Readme" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -370,6 +381,13 @@
           <caret line="25" column="21" lean-forward="false" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#619#875#0" expanded="false" />
+            <element signature="e#935#1250#0" expanded="false" />
+            <element signature="e#935#1170#1" expanded="false" />
+            <element signature="e#1299#1574#0" expanded="false" />
+            <element signature="e#1299#1488#1" expanded="false" />
+            <element signature="e#1637#1974#0" expanded="false" />
+            <element signature="e#2012#2816#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -448,6 +466,13 @@
           <caret line="25" column="21" lean-forward="false" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#619#875#0" expanded="false" />
+            <element signature="e#935#1250#0" expanded="false" />
+            <element signature="e#935#1170#1" expanded="false" />
+            <element signature="e#1299#1574#0" expanded="false" />
+            <element signature="e#1299#1488#1" expanded="false" />
+            <element signature="e#1637#1974#0" expanded="false" />
+            <element signature="e#2012#2816#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -536,6 +561,13 @@
           <caret line="25" column="21" lean-forward="false" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#619#875#0" expanded="false" />
+            <element signature="e#935#1250#0" expanded="false" />
+            <element signature="e#935#1170#1" expanded="false" />
+            <element signature="e#1299#1574#0" expanded="false" />
+            <element signature="e#1299#1488#1" expanded="false" />
+            <element signature="e#1637#1974#0" expanded="false" />
+            <element signature="e#2012#2816#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -624,6 +656,13 @@
           <caret line="35" column="20" lean-forward="false" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="20" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#619#875#0" expanded="false" />
+            <element signature="e#935#1250#0" expanded="false" />
+            <element signature="e#935#1170#1" expanded="false" />
+            <element signature="e#1299#1574#0" expanded="false" />
+            <element signature="e#1299#1488#1" expanded="false" />
+            <element signature="e#1637#1974#0" expanded="false" />
+            <element signature="e#2012#2816#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -720,16 +759,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/polygons/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="55" column="13" lean-forward="false" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/polygons/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="131">
@@ -741,10 +770,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/polygons/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="14" column="41" lean-forward="false" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#619#875#0" expanded="false" />
+            <element signature="e#935#1250#0" expanded="false" />
+            <element signature="e#935#1170#1" expanded="false" />
+            <element signature="e#1299#1574#0" expanded="false" />
+            <element signature="e#1299#1488#1" expanded="false" />
+            <element signature="e#1637#1974#0" expanded="false" />
+            <element signature="e#2012#2816#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/polygons/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="90" column="40" lean-forward="false" selection-start-line="90" selection-start-column="40" selection-end-line="90" selection-end-column="40" />
+        <state relative-caret-position="365">
+          <caret line="90" column="80" lean-forward="false" selection-start-line="90" selection-start-column="80" selection-end-line="90" selection-end-column="80" />
           <folding>
             <element signature="e#0#33#0" expanded="true" />
           </folding>

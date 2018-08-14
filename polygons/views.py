@@ -13,32 +13,74 @@ from rest_framework.decorators import action
 
 
 # using django rest framework for the API
-
-
 class ProviderView(ListCreateAPIView):
     """
-    Endpoint for creating new providers and fetching providers list. \n
+       API endpoint that allows provider to be viewed or edited.
+
+       create:
+       Return a new instance of provider.
+
+       list:
+       Return all provider.
     """
     queryset = Provider.objects.all()
     serializer_class = ProviderSerializer
 
 
 class ProviderDetails(RetrieveUpdateDestroyAPIView):
+    """
+       API endpoint that allows Provider to be viewed or edited or deleted.
+
+       retrieve:
+       Return  provider instance.
+
+       update:
+       edit provider instance.
+
+       destroy:
+       delete provider instance
+    """
     queryset = Provider.objects.all()
     serializer_class = ProviderSerializer
 
 
 class ServiceAreaView(ListCreateAPIView):
+    """
+       API endpoint that allows Service Area to be created or listed.
+
+       create:
+       Return a new instance of service_area.
+
+       list:
+       Return all service_area.
+    """
     queryset = ServiceArea.objects.all()
     serializer_class = ServiceAreaSerializer
 
 
 class ServiceAreaDetails(RetrieveUpdateDestroyAPIView):
+    """
+       API endpoint that allows Service Area to be viewed or edited or deleted.
+
+       retrieve:
+       Return  service_area instance.
+
+       update:
+       edit service_area instance.
+
+       destroy:
+       delete service_area instance
+    """
     queryset = ServiceArea.objects.all()
     serializer_class = ServiceAreaSerializer
 
 
 class ServiceAreaAPI(APIView):
+    """
+        Return a Service Area that Include the Point
+        :param lat
+        :param lat
+    """
     def get(self, request, *args, **kwargs):
         params = request.query_params
         lat = params.get('lat', None)

@@ -88,10 +88,9 @@ class UpdateDestroyServiceAreaTest(APITestCase):
 
     def test_can_find_correct_query(self):
         response = self.client.get(
-            '/service_areas/v1/get_areas/?lat={0}&lng={1}'.format("100.0", "0"))
-
+            '/service_areas/v1/get_areas/?lat={}&lng={}'.format("15.0", "10.0"))
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertEqual(len(response.data), 1)
+        self.assertEqual(len(response.data['features']), 1)
 
     def test_can_delete_service_area(self):
         response = self.client.delete('/service_areas/v1/service_areas/' + str(self.service_area.id) + "/")
