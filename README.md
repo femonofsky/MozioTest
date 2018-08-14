@@ -1,17 +1,42 @@
 # Custom Service Area
-Repository to store all fonts used in project.
 
 # Goals and challenge
-As Mozio expands internationally, we have a growing problem that many shuttle suppliers we'd like to integrate cannot give us concrete zipcodes, cities, etc that they serve. To combat this, we'd like to be able to define custom polygons as their "service area" and we'd like for the owners of these shuttle companies to be able to define and alter their polygons whenever they want, eliminating the need for mozio employees to do this boring grunt work.
 
-We'd like you to build a working prototype of a solution to this problem. It does not need to be responsive, just make it look good on a desktop computer and work well in chrome. You will be building 2 basic web pages and a small django backend to support them. Create a Github account if you do not have one already and put all of your source code on github.
+As Mozio expands internationally, we have a growing problem that many transportation suppliers we'd like to integrate 
+cannot give us concrete zipcodes, cities, etc that they serve. To combat this, we'd like to be able to define custom 
+polygons as their "service area" and we'd like for the owners of these shuttle companies to be able to define and alter 
+their polygons whenever they want, eliminating the need for mozio employees to do 
+this boring grunt work.
 
-The first page should contain a large interactive google map. You should be able to create polygons with an arbitrary number of points to define a "service area". Make it as easy to use and as editable as possible. I'd like you to shade or at least draw the box on the map so that I can see exactly the area that has been covered. There should be a way for me to view the exact lat/lng values of all my points, as well as a clear and submit a button. On submit, the data should be sent to the backend and stored. The most recent data should also be retrieved when I load the page next.
+*We'd like you to build a JSON REST API to help us solve this problem. 
+Create a Github account if you do not have one already and put all of your 
+source code on github. Your project should have API endpoints to create, 
+update, delete, and retreive information about providers. Batch operations 
+are not necessary except for get. A provider should contain the following 
+information:*
 
-The second page should also contain a large google map. I should be able to click anywhere on the map and be told whether that point is within the bounding box or not. You may cache data on the fronted, but be sure to actually use the django backend here to store the data permanently in a database
+- Name
+- Email
+- Phone Number
+- Language
+- Currency
 
-Build your backend using Django and MySQL or postgres. Figure out a way to store that data such that lookups are FAST. Mozio has thousands of providers who each serve many different areas, so the lookup needs to be quick. Deploy your app entirely using AWS and write up some basic API docs on how to use it. Mozio will pay any server costs that you may incur while doing this. COMMENT YOUR CODE and make the code as pretty and easy to understand as possible.
+Once a provider is created they should be able to start defining 
+service areas. These service areas will be geojson polygons and should be 
+stored in the database in a way that they can be retreived and queried upon 
+easily. There should be endpoints to create, update, delete, and get a 
+polygon. Batch operations are not necessary except for get. A polygon 
+should contain a name and price as well as the geojson information.
 
-Plus - If you'd like to go above and beyond, here are some suggestions:
- - support multiple bounding boxes and do lookup in all of them when I request an address
- - Instead of polygons, allow users to draw freely on the map.
+You should create an API endpoint to query this data. It should take a 
+lat/lng pair as arguments and return a list of all polygons that include 
+the given lat/lng. The name of the polygon, provider's name, and price 
+should be returned for each polygon. This operation should be FAST. Mozio 
+has thousand of providers and hundreds of thousands of service areas.*
+
+All of this should be built in python/django. Use any extra libraries 
+you think will help, choose whatever database you think is best fit for the 
+task, and use caching as you see fit. Once you finish, write up some API 
+docs (again using any tool you see fit) and make sure your code is well 
+tested. Ensure that your code is clean, follows standard pep8 style (though 
+you can use 120 characters per line) and has comments where appropriate.
