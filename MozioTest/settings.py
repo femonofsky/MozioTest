@@ -107,8 +107,9 @@ DATABASES = {
         # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-DATABASES['default'] = dj_database_url.parse(os.environ.get('DATABASE_URL'), 'django.contrib.gis.db.backends.postgis')
-
+# DATABASES['default'] = dj_database_url.parse(os.environ.get('DATABASE_URL'), 'django.contrib.gis.db.backends.postgis')
+DATABASES['default'] = dj_database_url.config()
+DATABASES['default']['ENGINE'] = 'django.contrib.gis.db.backends.postgis'
 
 
 
