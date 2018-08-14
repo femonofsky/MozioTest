@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
+import dj_database_url
 
 if os.name == 'nt':
     import platform
@@ -23,8 +24,11 @@ if os.name == 'nt':
     os.environ['PROJ_LIB'] = OSGEO4W + r"\share\proj"
     os.environ['PATH'] = OSGEO4W + r"\bin;" + os.environ['PATH']
 
+
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 
 
 # Quick-start development settings - unsuitable for production
@@ -91,14 +95,16 @@ WSGI_APPLICATION = 'MozioTest.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        'NAME': 'polygon',
-        'USER': 'postgres',#server: postgres_ , local:postgres
-        'PASSWORD': 'Blessing1',#''',
-        # 'HOST': '172.17.0.2',
+        'NAME': 'd8ignjl2namfum',#d8ignjl2namfum # polygon user=idqnckrnlrmqbh
+        'USER': 'idqnckrnlrmqbh',#server: postgres_ , local:postgres
+        'PASSWORD': 'cabbb69b591ba00bbe87dc2b79e818a6b87f90cec663dacb9e3bd5cf53cc52db',#''Blessing1',
+        'HOST': 'ec2-54-235-94-36.compute-1.amazonaws.com ',
         'PORT': '5432'
         # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+
 
 
 # Password validation
