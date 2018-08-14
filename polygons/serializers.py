@@ -1,13 +1,16 @@
 from rest_framework import serializers
+from rest_framework_gis.serializers import GeoFeatureModelSerializer
+from rest_framework.validators import UniqueValidator
 
-from polygons.models import Provider
+
+from polygons.models import Provider, ServiceArea
 
 
 class ProviderSerializer(serializers.Serializer):
     id = serializers.CharField(read_only=True)
     name = serializers.CharField()
-    email = serializers.EmailField()
-    phone_number = serializers.IntegerField()
+    email = serializers.EmailField(validators=[UniqueValidator(queryset=Provider.objects.all())])
+    phone_number = serializers.CharField()
     language = serializers.CharField()
     currency = serializers.CharField()
 
@@ -27,5 +30,15 @@ class ProviderSerializer(serializers.Serializer):
 
     class Meta:
         model = Provider
+        fields = '__all__'
+
+
+class ServiceAreaSerializer(GeoFeatureModelSerializer):
+    provider = ProviderSerializer(read_only=True)
+    provider_id = serializers.PrimaryKeyRelatedField(source="provider", queryset=Provider.objects.all())
+
+    class Meta:
+        model = ServiceArea
+        geo_field = 'polygon'
         fields = '__all__'
 
