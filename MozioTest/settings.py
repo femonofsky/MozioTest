@@ -107,9 +107,9 @@ DATABASES = {
         # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+DATABASES['default'] = dj_database_url.parse(os.environ.get('DATABASE_URL'), 'django.contrib.gis.db.backends.postgis')
 
-db_from_env = dj_database_url.config(conn_max_age=500)
-DATABASES['default'].update(db_from_env)
+
 
 
 # Password validation
