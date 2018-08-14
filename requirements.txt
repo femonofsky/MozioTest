@@ -19,6 +19,7 @@ django-cors-headers==2.3.0
 django-crontab==0.7.1
 django-filter==1.1.0
 django-filters==0.2.1
+django-heroku==0.3.1
 django-mailgun==0.9.1
 django-rest-multiple-models==2.0.1
 djangorestframework==3.8.2
@@ -83,5 +84,6 @@ virtualenv==15.1.0
 virtualenv-clone==0.3.0
 virtualenvwrapper==4.8.2
 virtualenvwrapper-win==1.2.5
+whitenoise==4.0
 wrapt==1.10.11
 xmldict==0.4.1
