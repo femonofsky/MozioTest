@@ -1,1 +1,1 @@
-heroku create --buildpack https://github.com/resmio/heroku-buildpack-geodjango.git
+python-3.6
