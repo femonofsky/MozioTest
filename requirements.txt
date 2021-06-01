@@ -79,7 +79,7 @@ stevedore==1.28.0
 suds-jurko==0.6
 typing==3.6.4
 uritemplate==3.0.0
-urllib3==1.23
+urllib3==1.26.5
 virtualenv==15.1.0
 virtualenv-clone==0.3.0
 virtualenvwrapper==4.8.2
